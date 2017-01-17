@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Die position-Eigenschaft</title>
+  <style>
+
+    .box {
+      width: 400px;
+      height: 400px;
+      background: tomato;
+    }
+
+    .box--purple {
+      position: relative;
+      background: purple;
+    }
+
+    .box--green {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+
+  </div>
+
+  <div class="box box--purple">
+    <div class="box box--green">
+
+    </div>
+  </div>
+
+</body>
+</html>
