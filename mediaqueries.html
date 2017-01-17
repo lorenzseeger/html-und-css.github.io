@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Positionierung mit Floats</title>
+  <style>
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    div,
+    header,
+    aside,
+    section,
+    footer {
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      border: 4px solid black;
+    }
+
+    .sidebar {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 20px;
+      border: 4px solid tomato;
+    }
+
+    .content {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 20px;
+      border: 4px solid purple;
+    }
+
+    .content img {
+      display: none;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer {
+      width: 100%;
+      height: 200px;
+      border: 4px solid brown;
+      clear: both;
+    }
+
+    @media screen and (min-width: 700px) {
+
+      .sidebar {
+        float: left;
+        width: 30%;
+      }
+
+      .content {
+        float: right;
+        width: 68%;
+      }
+
+      .content img {
+        display: block;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <p>Header</p>
+    </header>
+
+    <aside class="sidebar">
+      <p>Sidebar</p>
+    </aside>
+
+    <section class="content">
+      <p>Content</p>
+
+      <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg" alt="Katzenbilder">
+    </section>
+
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
